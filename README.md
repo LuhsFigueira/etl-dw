@@ -143,9 +143,13 @@ openpyxl>=3.1
 ```bash
 docker-compose up -d
 
-docker exec -i dest_postgres psql \
-  -U user_analytics \
-  -d analytics_db < postgres_dump.sql
+# Restaurar o banco no PowerShell
+Get-Content postgres_dump.sql | docker exec -i dest_postgres psql -U user_analytics -d analytics_db
+
+# Restaurar o banco no PowerShell
+docker exec -i dest_postgres psql -U user_analytics -d analytics_db < postgres_dump.sql
+
+
 ```
 
 
