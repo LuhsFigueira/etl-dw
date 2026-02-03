@@ -59,7 +59,7 @@ O objetivo é demonstrar boas práticas de **Engenharia de Dados**, incluindo:
 - sale_id
 - user_id
 - product_id
-- date_id
+- transaction_date
 - quantity
 - unit_price
 - total_price
