@@ -140,13 +140,13 @@ openpyxl>=3.1
 ---
 ## ▶️ Restaurar o banco PostgreSQL com dados
 
-
+```bash
 docker-compose up -d
 
 docker exec -i dest_postgres psql \
   -U user_analytics \
   -d analytics_db < postgres_dump.sql
-
+```
 
 
 ## ▶️ Como Executar o Pipeline
